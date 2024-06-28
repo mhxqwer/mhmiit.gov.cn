@@ -1,0 +1,198 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: "微软雅黑";
+}
+
+.w {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/*顶部导航*/
+.top-nav {
+	width: 100%;
+	background-color: #ededed;
+}
+
+.top-nav .menu {
+	height: 40px;
+	line-height: 40px;
+	padding-right: 50px;
+	font-size: 13px;
+	color: #333;
+}
+
+.top-nav .menu span {
+	float: right;
+}
+
+
+/*banner*/
+.banner {
+	width: 100%;
+	min-height: 150px;
+	background: url(../images/logo.png) no-repeat;
+}
+
+
+/*主导航*/
+.main-nav {
+	width: 100%;
+	background-color: #427fda;
+}
+
+.main-nav .main-nav-menu {
+	font-size: 17px;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+
+/*当前位置*/
+.position {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #ededed;
+}
+
+.position .position-txt {
+	padding-left: 25px;
+	font-size: 13px;
+	color: #454545;
+}
+
+
+/*内容*/
+.con {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.con .con-left {
+	float: left;
+	width: 840px;
+	padding: 20px 60px 0;
+	min-height: 940px;
+	/*text-align: center;*/
+	margin-right: 25px;
+	border: 1px #d9d9d9 solid;
+}
+
+
+.con-left .con-title{font-size: 25px; color: #000; height: 66px; line-height: 66px; text-align: center; border-bottom: 2px #717171 solid;}
+.con-left .small-title{width: 715px; font-size: 15px; color: #333; height: 50px; line-height: 50px;}
+.con-left .small-title .date{margin: 0 50px 0 150px;}
+.con-left .small-title .fare{float: right; min-width: 210px;}
+
+.main-txt{margin-top: 10px;}
+.main-txt p{font-size: 15px; color: #333; line-height: 2em; text-indent: 2em;}
+.main-corner{float: right; margin-top: 20px; margin-bottom: 40px;}
+.main-corner div{font-size: 15px; color: #333; line-height: 26px;}
+
+.main-word{width: 100%; height: 40px; line-height: 40px; padding: 0 20px; background-color: #f1f1f1;}
+.main-word .main-word-left{float: left;}
+.main-word-left span{font-size: 15px; font-weight: bold; color: #fa0505;}
+.main-word .main-word-right{float: right;}
+.main-word-right span{float: left;}
+.main-word-right .printer{margin-left: 30px; padding-left: 25px; background: url(../images/printer.png) no-repeat left center;}
+.main-word-right .close{margin-left: 25px; padding-left: 25px; background: url(../images/close.png) no-repeat left center;}
+.con-main .line{border: 1px #c5c5c5 dotted; margin: 20px 0;}
+.con-main .prev{margin-bottom: 15px;}
+
+
+
+.con .con-right{
+	float: left;
+	width: 235px;
+}
+.con-right .right-list{
+	width: 235px;
+	height: 288px;
+	margin-bottom: 30px;
+	border: 1px #d9d9d9 solid;
+	border-top: 2px #1d79cc solid;
+	background-color: #f7f7f7;
+}
+.right-list .right-list-title{
+	width: 235px;
+	height: 45px;
+	padding: 0 15px;
+	border-bottom: 1px #fbfbfb solid;
+}
+.right-list-title .list-title-txt{
+	float: left;
+	font-size: 17px;
+	font-weight: bold;
+	color: #1d79cc;
+	/*margin-left: 25px;*/
+	margin-top: 12px;
+	padding-left: 15px;
+	border-left: 4px #1d79cc solid;
+}
+.right-list-title .list-title-more{
+	float: right;
+	font-size: 15px;
+	color: #999;
+	line-height: 45px;
+}
+.right-list .right-list-content{
+	font-size: 17px;
+	color: #333;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+.right-list-content li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	padding-left: 15px;
+	background: url(../images/dot.png) no-repeat left center;
+}
+.right-list-content li a{color: #333;}
+
+/*底*/
+.footer-banner {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	background-color: #427fda;
+}
+
+.footer {
+	width: 100%;
+	height: 110px;
+	line-height: 110px;
+	font-size: 13px;
+	color: #999;
+	text-align: center;
+	background-color: #dbdbdb;
+}
+
+@media screen and (max-width:1000px){
+	.top-nav,.banner,.main-nav,.position,.footer,.con-right,.see,.fare,.main-word,.line{display: none;}
+	.con .con-left,.con-left .small-title,.w{width: 100%;}
+	.con{margin-top: 0;}
+	.con .con-left{border: 0;}
+	.con-left .con-title{line-height: 40px;height: auto;}
+	.con-left .small-title .date{display: block;margin: 0!important;text-align: center;}
+}
